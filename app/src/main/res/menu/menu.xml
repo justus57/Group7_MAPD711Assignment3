@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/apple"
+        android:title="Apple" />
+    <item
+        android:id="@+id/samsung"
+        android:title="Samsung" />
+    <item
+        android:id="@+id/googlePixel"
+        android:title="Google Pixel" />
+    <item
+        android:id="@+id/oppo"
+        android:title="Oppo" />
+</menu>
