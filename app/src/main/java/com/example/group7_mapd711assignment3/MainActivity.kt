@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         if (id == R.id.apple) {
             val bundle = Bundle()
             bundle.putString("PhoneName", "Apple")
-            val intent = Intent(this, mapActivity::class.java)
+            val intent = Intent(this, MapsActivity::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
             Toast.makeText(this, "Item One Clicked", Toast.LENGTH_LONG).show()
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         if (id == R.id.oppo) {
             val bundle = Bundle()
             bundle.putString("PhoneName", "Oppo")
-            val intent = Intent(this, mapActivity::class.java)
+            val intent = Intent(this, MapsActivity::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
             Toast.makeText(this, "Item Two Clicked", Toast.LENGTH_LONG).show()
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         if (id == R.id.samsung) {
             val bundle = Bundle()
             bundle.putString("PhoneName", "Samsung")
-            val intent = Intent(this, mapActivity::class.java)
+            val intent = Intent(this, MapsActivity::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
             Toast.makeText(this, "Item Three Clicked", Toast.LENGTH_LONG).show()
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         if (id == R.id.googlePixel) {
             val bundle = Bundle()
             bundle.putString("PhoneName", "GooglePixel")
-            val intent = Intent(this, mapActivity::class.java)
+            val intent = Intent(this, MapsActivity::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
             Toast.makeText(this, "Item Three Clicked", Toast.LENGTH_LONG).show()

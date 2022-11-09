@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/apple"
-        android:title="Apple" />
+        android:title="Apple Store" />
     <item
         android:id="@+id/samsung"
-        android:title="Samsung" />
+        android:title="Samsung Store" />
     <item
         android:id="@+id/googlePixel"
-        android:title="Google Pixel" />
+        android:title="Google Pixel Store" />
     <item
         android:id="@+id/oppo"
-        android:title="Oppo" />
+        android:title="Oppo Store" />
 </menu>
