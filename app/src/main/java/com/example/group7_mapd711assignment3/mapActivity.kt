@@ -7,7 +7,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.Transformations.map
-import androidx.lifecycle.viewmodel.CreationExtras.Empty.map
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -23,9 +22,14 @@ class mapActivity : AppCompatActivity(),OnMapReadyCallback {
     private var mMap: GoogleMap? = null
     var searchView: SearchView? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_map)
+        setContentView(com.example.group7_mapd711assignment3.R.layout.activity_main)
+
+        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+        val mapFragment = supportFragmentManager
+            .findFragmentById(R.id.map) as SupportMapFragment
 
         val bundle = intent.extras
         if (bundle != null) {
@@ -33,7 +37,6 @@ class mapActivity : AppCompatActivity(),OnMapReadyCallback {
         }
         searchView = valuedata as SearchView;
 
-        val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         // adding on query listener for our search view.
        // adding on query listener for our search view.
         searchView?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
