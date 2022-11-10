@@ -41,8 +41,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 // location name from search view.
                 val location: String = valuedata
 
-                // below line is to create a list of address
-                // where we will store the list of all address.
                 var addressList: List<Address>? = null
 
                 // checking if the entered location is null or not.
